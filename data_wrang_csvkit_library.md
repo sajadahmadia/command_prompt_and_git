@@ -5,6 +5,7 @@ In this project, we want to use the bash command prompt to first combine three l
 First, checking the current working directory:
 
 Command: **pwd**
+
 <img width="277" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/c16d0b76-8785-45da-aee0-4304e4f4d1b1">
 
 
