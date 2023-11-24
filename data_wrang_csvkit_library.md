@@ -23,11 +23,23 @@ Command: **cd “/Users/sajad/Downloads/housing\_raw\_data”**
 
 Checking the files in this directory and their access levels:
 
+
+<img width="468" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/23d274ae-7e1f-476a-96e7-0c7077807869">
+
+
+
+
 As we can see, there are 3 files for different years(2005,2007,2013). These are large csv files and we want to stack them without loading them in Python notebooks. 
 
 First, let’s find out how many rows each file has.
 
 Command: **wc -l Hud\_2007.csv**
+
+
+<img width="468" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/9579a132-830b-4bce-8252-2072fd13a81f">
+
+
+
 
 The Hud\_2005, 2007, and 2013 contain 46854, 42730, and 64536 rows in order(including the header row).
 
@@ -36,9 +48,18 @@ Let’s see the first 5 rows of the Hud\_2005 file.
 Command: head -5 Hud\_2005.csv
 
 
+<img width="468" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/0a899276-05f9-4ea1-8019-90eb76fbc932">
+
+
+
+
 We want to Merge Hud\_2005.csv, Hud\_2007.csv, and Hud\_2013.csv in that order into one file(named Combined\_hud.csv). additionally, we want to add one column that shows the origin data source based on the year of that data source. From now, we use the **Csvkit library**. 
 
 Command: **csvstack -n year -g 2005,2007,2013 Hud\_2005.csv Hud\_2007.csv Hud\_2013.csv > Combined\_hud.csv**
+
+<img width="468" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/efcf9184-3470-421d-a2c1-16da65331463">
+
+
 
 
 Showing the first 5 rows:
