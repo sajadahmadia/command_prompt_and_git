@@ -9,6 +9,11 @@ Command: **pwd**
 <img width="277" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/c16d0b76-8785-45da-aee0-4304e4f4d1b1">
 
 
+<img width="468" alt="image" src="https://github.com/sajadahmadia/command_prompt_and_git/assets/61582647/f6b3aaf3-e631-4f7d-a791-983b863febf4">
+
+
+
+
 Changing the current directory to the directory containing raw data:
 
 Command: **cd “/Users/sajad/Downloads/housing\_raw\_data”**
